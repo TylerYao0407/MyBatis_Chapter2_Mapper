@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间和接口一一对应-->
+<mapper namespace="com.tyler.mapper.UserMapper">
+    <!--id和接口中的方法一一对应-->
+    <!--返回值和接口中方法的返回值对应-->
+    <!--返回值和接口中方法的返回值对应-->
+    <!--如果使用注解，把select标签迁移到UserMapper.java中即可-->
+    <select id="getName" parameterType="int" resultType="user">
+        select * from user where id=#{id}
+    </select>
+</mapper>
